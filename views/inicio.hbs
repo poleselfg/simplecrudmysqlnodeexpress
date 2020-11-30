@@ -1,0 +1,19 @@
+<h1>Usuarios</h1>
+
+
+<hr>
+<ul class="list-group">
+    {{#each results}}
+
+    <li class="list-group-item">
+        <a href="/show/{{id}}">{{user}}</a>
+        <a href="/edit/{{id}}" class="btn btn-success btn-sm">editar</a>
+        <a href="/delete/{{id}}" class="btn btn-danger btn-sm">eliminar</a>
+    </li>
+    {{/each}}
+    <!-- Hace como un for each en la info que le paso en la ruta y la muestra -->
+
+</ul>
+
+<hr>
+<a class="btn btn-primary" href="/create">Crear</a>
